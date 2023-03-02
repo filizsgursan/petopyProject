@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./src"
+                ],
+                "alias": {
+                    // Public
+                    "@assets": "./assets",                   
+                    "@images": "./assets/images",
+                    "@common": "./src/common"                   
+
+                }
+            }
+        ]
+    ]
+}

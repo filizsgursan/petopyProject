@@ -1,12 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import VaccinationScreen from './src/components/Vaccination/VaccinationScreen';
+// Native Base
+import { NativeBaseProvider, extendTheme } from "native-base"
+
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider >
+
+      <VaccinationScreen />
+    </NativeBaseProvider>
+   
   );
 }
 
